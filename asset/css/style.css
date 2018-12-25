@@ -1,9 +1,14 @@
 body{
-	font: 400 15px/15px 'Roboto', sans-serif;
+	font:'Roboto', sans-serif;
+}
+.aboutbg{
+	margin:0 auto;
+	box-sizing: border-box;
 	background-image: url("../img/aboutbackground.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	color:white;
+	height: 100%;
 }
 img{
 	width:100%;
@@ -20,7 +25,7 @@ img{
 	width:100%;
 }
 .navbar{
-margin-top:35px;
+padding-top:35px;
 }
 .navbar-nav{
 	margin-left:50px;
@@ -35,7 +40,6 @@ margin-top:35px;
 	padding-left:35px !important;
 }
 .sectionTitle{
-	font-family: 'Roboto', sans-serif;
 	font-size: 20pt;
 }
 .section{
@@ -83,8 +87,6 @@ background-color: rgba(255,255,255,.2);
 border-radius: 20px;
 }
 .FAQ p ,.FAQ h6 ,.copyRight span{
-	
-	font-family: 'Roboto', sans-serif;
 	font-size: 14pt;
 }
 .FAQ p ,.FAQ h6 {
@@ -96,4 +98,15 @@ border-radius: 20px;
 }
 .copyRight{
 	margin-top:40px;
+}
+/****************mobile*********************/
+@media (min-width: 300px) and (max-width: 767px){
+	.aboutbg{
+
+		color:black;
+	}
+	.FAQ p,.FAQ h6{
+		font-size:12pt;
+		font-family: 'Montserrat', sans-serif;
+	}
 }
