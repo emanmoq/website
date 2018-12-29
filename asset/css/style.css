@@ -517,6 +517,21 @@ font-weight: lighter;
 	  display: inline-block;
 	  display: none;
   }
+  .medicinDiv ul li{
+	  color:#AC69FF;
+  }
+  .medicinDiv ul li span,.comment span{
+	  color:#131526;
+	  font-size:14px;
+  }
+  .medicinDiv .allergies .allergiesswitch{ 
+	  margin-top:25px;
+  }
+  .medicinDiv .allergies {
+	  margin-left:70px;
+  }
+
+
  .purble{
 	background-image:linear-gradient(to right,#3023AE, #9B6DD7) !important;
   }
@@ -972,6 +987,7 @@ margin-left:40px;
 	display:none;
 	
 }
+
 .DurationBox{
     display: block;
     bottom: 242px;

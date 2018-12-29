@@ -1,8 +1,5 @@
 
-$(function(){
-
-    
- 
+$(document).ready(function () {
     /********pop up for confairmation */
     $(".Register").click(function(){
         $(".waitConfirm").css("display","block");
@@ -15,14 +12,18 @@ $(function(){
     });
     
     /**********show editable in     My Order */
-   $(".showmedicin").click(function() {
-    $(".showedit").css("display","block");
-        $(".medicinDiv").slideToggle( "slow");
-        $(this).css("display","none");
+    $("#showedit").click(function(){
+        $(".medicinDiv").css("display","block");
       });
 
+      $(".Duration").click(function() {
+        $(".DurationBox").css("display","block");
+       
+      });
+      
+
       $(".orderNotification").click(function() {
-            $(".notificationBox").css( "display","block");
+            $(".notificationBox").slideDown( );
 
           });
           $(".doctornotification").click(function() {
@@ -37,8 +38,6 @@ $(function(){
             $(".overlay").css("display","block");
     
         });
-          
-          
           /******************** */
           $(".addNewpharmacy").click(function(){
             $("addNewPharmacyBox").css("display","block");
@@ -48,10 +47,6 @@ $(function(){
           
       /********* popup for edit Patient ******************  */  
       $(".newOrder").click(function(){
-        $(".PatientBox").css("display","block");
-        $(".overlay").css("display","block");
-    });
-    $(".newOrder").click(function(){
         $(".PatientBox").css("display","block");
         $(".overlay").css("display","block");
     });
