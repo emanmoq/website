@@ -719,6 +719,11 @@ left:7px;
  .allergiesyesno.NO{
 	right:7px;
 	 }
+	 input:checked + .yseorno .slider:after {
+		background-image: linear-gradient(to right,#3627B0, #9B6DD7);
+		
+	  }
+	 
 
   /*.allergiesswitch {  max-width: 70px;
 }
