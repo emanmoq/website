@@ -33,7 +33,7 @@ $(function(){
             $(".statusBox").css( "display","block");
           });
           $(".moreDetailsOrder").click(function(){
-            $("PatientBox.phPatientBox").css("display","block");
+            $("PatientBox").css("display","block");
             $(".overlay").css("display","block");
     
         });
