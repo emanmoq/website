@@ -2,7 +2,9 @@
 $(function(){
 
     
-    
+    $(".switch").click(function(){
+        $(this).toggleClass("on");
+    });
     /********pop up for confairmation */
     $(".Register").click(function(){
         $(".waitConfirm").css("display","block");
