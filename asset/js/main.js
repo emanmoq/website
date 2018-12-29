@@ -2,9 +2,7 @@
 $(function(){
 
     
-    $(".switch").click(function(){
-        $(this).toggleClass("on");
-    });
+ 
     /********pop up for confairmation */
     $(".Register").click(function(){
         $(".waitConfirm").css("display","block");
@@ -15,6 +13,7 @@ $(function(){
         $(".waitConfirm").css("display","none");
         $(".overlay").css("display","none");
     });
+    
     /**********show editable in     My Order */
    $(".showmedicin").click(function() {
     $(".showedit").css("display","block");
@@ -48,7 +47,11 @@ $(function(){
         });
           
       /********* popup for edit Patient ******************  */  
-      $(".showedit").click(function(){
+      $(".newOrder").click(function(){
+        $(".PatientBox").css("display","block");
+        $(".overlay").css("display","block");
+    });
+    $(".newOrder").click(function(){
         $(".PatientBox").css("display","block");
         $(".overlay").css("display","block");
     });
