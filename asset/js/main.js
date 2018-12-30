@@ -12,16 +12,34 @@ $(document).ready(function () {
     });
     
     /**********show editable in     My Order */
-    $("#showedit").click(function(){
-        $(".medicinDiv").css("display","block");
-      });
+    /**$(".showMore").click(function(){
+        $(this).parent.parent.closest('tr').next('tr.medicinDiv').css("display","block");
+        $(this).css("display","none");
+        $(".hideMore").css("display","block");
+      }); */
+      $('.showMore').click(function () {
+        $(this).parent().parent().next().find(".medicinDiv").slideToggle(400);
+        $(this).css("display","none");
+        $(this).parent().find(".hideMore").css("display","block");
+    });
+    $('.hideMore').click(function () {
+        $(this).parent().parent().next().find(".medicinDiv").slideToggle(400);
+        $(this).css("display","none");
+        $(this).parent().find(".showMore").css("display","block");
+    });
+  /*********************************** */
+
+/******************************** */
 
       $(".Duration").click(function() {
         $(".DurationBox").css("display","block");
        
       });
       
+      $(".notification").click(function() {
+        $(".notificationBox").slideDown();
 
+      });
       $(".orderNotification").click(function() {
             $(".notificationBox").slideDown( );
 
@@ -72,5 +90,25 @@ $(document).ready(function () {
         $(".medicationBox").css("display","block");
        
     });
-    
+   
+    $(document).ready(function () {
+        $(".pagination").rPage();
+    });
+    $('.numberPicker').owlCarousel({
+        autoplay: false,
+        loop: true,
+        dots: false,
+        nav: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items:7,
+            },
+            1000:{
+                items:7,
+                margin:20,
+            }
+          
+        }
+});
 });

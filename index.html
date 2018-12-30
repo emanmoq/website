@@ -11,7 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-        
+        <link rel="stylesheet" href="asset/css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="asset/css/owl.carousel.css" type="text/css">
         <link rel="stylesheet" href="asset/css/style.css" type="text/css">
 </head>
 <body>
@@ -130,7 +131,8 @@
                             <h2>LAST ORDER</h2>
                         </div>
                         <div class="lastOrderContainer">
-                                    <table class="orderTable table">
+                                <div class="table-responsive">
+                                                                            <table class="orderTable table">
                                         <thead>
                                             <tr>
                                               <th >Order ID</th>
@@ -141,6 +143,7 @@
                                             
                                         </thead>
                                         <tbody>
+                                      <tr></tr>
                                              <tr>
 
                                               <td>54473-251</td>
@@ -148,13 +151,17 @@
                                               <td>482-437-2166</td>
                                               <td><span class="status sendstatus"> Send</span></td>
                                               <td class="lasttd clearfix"><p> The LASIK surgeon uses computer software to guide the IntraLase laser beam, which applies a series of tiny (3-micron-</p>
-                                                <a id ="showedit"href="##"><i class="fas fa-angle-right"></i></a>
+                                                <a class="showMore "href="##"><i class="fas fa-angle-right"></i></a>
+                                                <a class ="hideMore" href="##"><i class="fas fa-angle-down"></i></a>
+                                                
                                             </td>
                                             </tr>
-                                        <div class="medicinDiv  clearfix">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                        <div class="medicin text-left">
+                                            <tr class="hiddentr">
+                                                <td colspan="5">
+                                                  <div class=" medicinDiv clearfix">
+                                                      <div class="row">
+                                                         <div class="col-md-4">
+                                                         <div class="medicin text-left">
                                                                 <span>MEDICATION</span>
                                                                 <ul>
                                                                     <li>
@@ -203,46 +210,285 @@
                                             </div>
 
                                             </div>
+                                                </td>
+                                            </tr>
+                                            <tr></tr>
                                             <tr>
                                               <td>54473-251</td>
                                               <td>Nora Fletcher</td> 
                                               <td>482-437-2166</td>
                                               <td><span class="status donestatus"> Done</span></td>
                                               <td class="lasttd clearfix"><p> The LASIK surgeon uses computer software to guide the IntraLase laser beam, which applies a series of tiny (3-micron-</p>
-                                                <a id ="showedit"href="##"><i class="fas fa-angle-right"></i></a>
+                                                <a class="showMore "href="##"><i class="fas fa-angle-right"></i></a>
+                                                <a class ="hideMore" href="##"><i class="fas fa-angle-down"></i></a>
                                             </td>
                                             </tr>
+                                            <tr class="hiddentr">
+                                                <td colspan="5">
+                                                  <div class=" medicinDiv clearfix">
+                                                      <div class="row">
+                                                         <div class="col-md-4">
+                                                         <div class="medicin text-left">
+                                                                <span>MEDICATION</span>
+                                                                <ul>
+                                                                    <li>
+                                                                           <span>On Your Mark Medical Service</span> 
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>On Call Medics</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span> Lifeline Medical Supply  </span>
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>Heart of Hope In-Home Health Care</span>
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>VulcanMed Research</span>
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>Grace Medical</span>
+                                                                    </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                        <div class="comment text-left">
+                                                                <span>COMMENT</span>
+                                                                <p>
+                                                                        A very important section of any medical practise or hospital is what is called the Central Sterilization and Supplies Department or CSSD. In the typical CSSD of a hospital, surgical equipments and bandages and supplies are.
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                        <div class="allergies text-left">
+                                                                <span>ALLERGIES</span>
+                                                                <div class="allergiesswitch">
+                                                                        <label class="switch">
+                                                       
+                                                                                <input type="checkbox">
+                                                                                <span class="slider"></span>
+                                                                                        <span class="allergiesyesno YES">YES</span>
+                                                                                        <span class="allergiesyesno NO">NO</span>
+                                                                             </label>
+                                                                    </div>
+                                                            </div> 
+                                                </div>
+                                            </div>
+
+                                            </div>
+                                                </td>
+                                            </tr>
+                                            <tr></tr>
                                             <tr>
                                               <td>54473-251</td>
                                               <td>Nora Fletcher</td> 
                                               <td>482-437-2166</td>
                                               <td><span class="status cancelstatus"> Cancelled</span></td>
                                               <td class="lasttd clearfix"><p> The LASIK surgeon uses computer software to guide the IntraLase laser beam, which applies a series of tiny (3-micron-</p>
-                                                <a id ="showedit"href="##"><i class="fas fa-angle-right"></i></a>
+                                                <a class ="showMore"href="##"><i class="fas fa-angle-right"></i></a>
+                                                <a class ="hideMore"href="##"><i class="fas fa-angle-down"></i></a>
                                             </td>
+                                           </tr>
                                             </tr>
+                                             <tr class="hiddentr">
+                                                <td colspan="5">
+                                                  <div class=" medicinDiv clearfix">
+                                                      <div class="row">
+                                                         <div class="col-md-4">
+                                                         <div class="medicin text-left">
+                                                                <span>MEDICATION</span>
+                                                                <ul>
+                                                                    <li>
+                                                                           <span>On Your Mark Medical Service</span> 
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>On Call Medics</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span> Lifeline Medical Supply  </span>
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>Heart of Hope In-Home Health Care</span>
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>VulcanMed Research</span>
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>Grace Medical</span>
+                                                                    </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                        <div class="comment text-left">
+                                                                <span>COMMENT</span>
+                                                                <p>
+                                                                        A very important section of any medical practise or hospital is what is called the Central Sterilization and Supplies Department or CSSD. In the typical CSSD of a hospital, surgical equipments and bandages and supplies are.
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                        <div class="allergies text-left">
+                                                                <span>ALLERGIES</span>
+                                                                <div class="allergiesswitch">
+                                                                        <label class="switch">
+                                                       
+                                                                                <input type="checkbox">
+                                                                                <span class="slider"></span>
+                                                                                        <span class="allergiesyesno YES">YES</span>
+                                                                                        <span class="allergiesyesno NO">NO</span>
+                                                                             </label>
+                                                                    </div>
+                                                            </div> 
+                                                </div>
+                                            </div>
+
+                                            </div>
+                                                </td>
+                                            </tr>
+                                            <tr></tr>
                                             <tr>
                                                     <td>54473-251</td>
                                                     <td>Nora Fletcher</td> 
                                                     <td>482-437-2166</td>
                                                     <td><span class="status donestatus"> Done</span></td>
                                                     <td class="lasttd clearfix"><p> The LASIK surgeon uses computer software to guide the IntraLase laser beam, which applies a series of tiny (3-micron-</p>
-                                                        <a id ="showedit"href="##"><i class="fas fa-angle-right"></i></a>
+                                                        <a class="showMore "href="##"><i class="fas fa-angle-right"></i></a>
+                                                        <a class ="hideMore" href="##"><i class="fas fa-angle-down"></i></a>
                                                   </td>
-                                                  </tr>
-                                                  <tr>
+                                            </tr>
+                                            <tr class="hiddentr">
+                                                        <td colspan="5">
+                                                          <div class=" medicinDiv clearfix">
+                                                              <div class="row">
+                                                                 <div class="col-md-4">
+                                                                 <div class="medicin text-left">
+                                                                        <span>MEDICATION</span>
+                                                                        <ul>
+                                                                            <li>
+                                                                                   <span>On Your Mark Medical Service</span> 
+                                                                            </li>
+                                                                            <li>
+                                                                                    <span>On Call Medics</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                <span> Lifeline Medical Supply  </span>
+                                                                            </li>
+                                                                            <li>
+                                                                                    <span>Heart of Hope In-Home Health Care</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                    <span>VulcanMed Research</span>
+                                                                            </li>
+                                                                            <li>
+                                                                                    <span>Grace Medical</span>
+                                                                            </li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                                <div class="comment text-left">
+                                                                        <span>COMMENT</span>
+                                                                        <p>
+                                                                                A very important section of any medical practise or hospital is what is called the Central Sterilization and Supplies Department or CSSD. In the typical CSSD of a hospital, surgical equipments and bandages and supplies are.
+                                                                        </p>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                                <div class="allergies text-left">
+                                                                        <span>ALLERGIES</span>
+                                                                        <div class="allergiesswitch">
+                                                                                <label class="switch">
+                                                               
+                                                                                        <input type="checkbox">
+                                                                                        <span class="slider"></span>
+                                                                                                <span class="allergiesyesno YES">YES</span>
+                                                                                                <span class="allergiesyesno NO">NO</span>
+                                                                                     </label>
+                                                                            </div>
+                                                                    </div> 
+                                                        </div>
+                                                    </div>
+        
+                                                    </div>
+                                                        </td>
+                                            </tr>
+                                            <tr></tr>
+
+                                            <tr>
                                                     <td>54473-251</td>
                                                     <td>Nora Fletcher</td> 
                                                     <td>482-437-2166</td>
                                                     <td><span class="status cancelstatus"> Cancelled</span></td>
                                                     <td class="lasttd clearfix"><p> The LASIK surgeon uses computer software to guide the IntraLase laser beam, which applies a series of tiny (3-micron-</p>
-                                                        <a href="##"><i class="showedit fas fa-angle-right"></i></a>
+                                                        <a class="showMore "href="##"><i class="fas fa-angle-right"></i></a>
+                                                        <a class ="hideMore" href="##"><i class="fas fa-angle-down"></i></a>
                                                   </td>
-                                                  </tr>
+                                            </tr>
+                                            <tr class="hiddentr">
+                                                <td colspan="5">
+                                                  <div class=" medicinDiv clearfix">
+                                                      <div class="row">
+                                                         <div class="col-md-4">
+                                                         <div class="medicin text-left">
+                                                                <span>MEDICATION</span>
+                                                                <ul>
+                                                                    <li>
+                                                                           <span>On Your Mark Medical Service</span> 
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>On Call Medics</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <span> Lifeline Medical Supply  </span>
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>Heart of Hope In-Home Health Care</span>
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>VulcanMed Research</span>
+                                                                    </li>
+                                                                    <li>
+                                                                            <span>Grace Medical</span>
+                                                                    </li>
+                                                                </ul>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                        <div class="comment text-left">
+                                                                <span>COMMENT</span>
+                                                                <p>
+                                                                        A very important section of any medical practise or hospital is what is called the Central Sterilization and Supplies Department or CSSD. In the typical CSSD of a hospital, surgical equipments and bandages and supplies are.
+                                                                </p>
+                                                        </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                        <div class="allergies text-left">
+                                                                <span>ALLERGIES</span>
+                                                                <div class="allergiesswitch">
+                                                                        <label class="switch">
+                                                       
+                                                                                <input type="checkbox">
+                                                                                <span class="slider"></span>
+                                                                                        <span class="allergiesyesno YES">YES</span>
+                                                                                        <span class="allergiesyesno NO">NO</span>
+                                                                             </label>
+                                                                    </div>
+                                                            </div> 
+                                                </div>
+                                            </div>
+
+                                            </div>
+                                                </td>
+                                            </tr>
+                                            <tr></tr>
+
                                         </tbody>
                           
 
                                           </table>
+                                </div>
 
                                 <nav aria-label="Page navigation example">
                                         <ul class="pagination justify-content-end">
@@ -287,187 +533,211 @@
       
     </div>
     <div class="PatientBox">
-            <span class="closePatient"><a href="##"><i class="fas fa-times"></i></a></span>
-            <h4 class="PatientBoxTitle">PATIENT DIAGNOSIS</h4>
-            <span class="PatientNum">#232124</span>
-            <form >
-                    <div class="formControl">
-                        <label> FIRST NAME</label>
-                         <input type="text" placeholder="EX. Mohammed ">
-                         <div class="formImg">
-                             <img src="asset/img/person2.png" alt="">
-                         </div>
-                    </div>
-                    <div class="formControl">
-                            <label> LAST NAME</label>
-                            <input type="text" placeholder="EX. Ali">
-                            <div class="formImg">
-                                <img src="asset/img/person2.png" alt="">
-                            </div>
-                       </div>
-
-                       <div class="formControl">
-                            <label> PHONE NUMBER</label>
-
-                            <input type="number" placeholder="+966 59 000000 ">
-                            <div class="formImg">
-                                <img src="asset/img/number2.png" alt="">
-                            </div>
-                       </div>
-            </form>
-            <div class="allergiesSec clearfix">
-                <h4 class="allergiesSecTitle">ALLERGIES</h4>
-                <div class="allergiesswitch clearfix">
-                        <label class="switch float-right">
-                                   
-                                <input type="checkbox">
-                                <span class="slider"></span>
-                                        <span class="allergiesyesno YES">YES</span>
-                                        <span class="allergiesyesno NO">NO</span>
-                             </label>
-                    </div>
-                    <div class="addcomment clearfix">
-                        <div class="addimg">
-                                <img src="asset/img/add.png" alt="">
+                <span class="closePatient"><a href="##"><i class="fas fa-times"></i></a></span>
+                <h4 class="PatientBoxTitle">PATIENT DIAGNOSIS</h4>
+                <span class="PatientNum">#232124</span>
+                <form >
+                        <div class="formControl">
+                            <label> FIRST NAME</label>
+                             <input type="text" placeholder="EX. Mohammed ">
+                             <div class="formImg">
+                                 <img src="asset/img/person2.png" alt="">
+                             </div>
                         </div>
-                       <a href="##"> <span class="commentTxt allergiescomment">Add Comment</span></a> 
-                    </div>
-
-             
-            </div>
-            <div class="allergiesSec Diagnosissec">
-                    <h4 class="allergiesSecTitle DiagnosisTitle">DIAGNOSIS</h4>
+                        <div class="formControl">
+                                <label> LAST NAME</label>
+                                <input type="text" placeholder="EX. Ali">
+                                <div class="formImg">
+                                    <img src="asset/img/person2.png" alt="">
+                                </div>
+                           </div>
+    
+                           <div class="formControl">
+                                <label> PHONE NUMBER</label>
+    
+                                <input type="number" placeholder="+966 59 000000 ">
+                                <div class="formImg">
+                                    <img src="asset/img/number2.png" alt="">
+                                </div>
+                           </div>
+                </form>
+                <div class="allergiesSec clearfix">
+                    <h4 class="allergiesSecTitle">ALLERGIES</h4>
+                    <div class="allergiesswitch clearfix">
+                            <label class="switch float-right">
+                                       
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                            <span class="allergiesyesno YES">YES</span>
+                                            <span class="allergiesyesno NO">NO</span>
+                                 </label>
+                        </div>
                         <div class="addcomment clearfix">
                             <div class="addimg">
                                     <img src="asset/img/add.png" alt="">
                             </div>
-                           <a href="##"> <span class="commentTxt AddDiagnos">Add Diagnosis</span></a> 
+                           <a href="##"> <span class="commentTxt allergiescomment">Add Comment</span></a> 
                         </div>
-
-                        <div class="addDiagnosiscomment">
-                                <textarea class="addtext" >
-                                        Here Write Diagnosis
-                                </textarea>
-                                <a class="sendbtn addNow" href="##"> ADD NOW</a>
-                        </div>
-            </div>
-            <div class="allergiesSec medicationSec ">
-                    <div class="medicationSectitles clearfix"><h4 class="allergiesSecTitle">MEDICATION</h4>
-                    
-                        <span>FREQUENCY</span>
-                        <span>DURATION</span></div>
-                        <div class="addcomment clearfix">
-                            <div class="addimg">
-                                    <img src="asset/img/add.png" alt="">
+    
+                 
+                </div>
+                <div class="allergiesSec Diagnosissec">
+                        <h4 class="allergiesSecTitle DiagnosisTitle">DIAGNOSIS</h4>
+                            <div class="addcomment clearfix">
+                                <div class="addimg">
+                                        <img src="asset/img/add.png" alt="">
+                                </div>
+                               <a href="##"> <span class="commentTxt AddDiagnos">Add Diagnosis</span></a> 
                             </div>
-                           <a href="##"> <span class="commentTxt Addmedication ">Add Medication</span></a>
-                           <a href="##"> <span class="commentTxt frequency ">00 </span> <span class="addfreq"> + </span></a> 
-                           <a href="##"> <span class="commentTxt Duration ">DD/HH </span> <span class="addDuration"> + </span></a>                                            
-                       </div>
-                       <div class="medicationBox">
-                            <div class="arrowD">
-                                    <img src="asset/img/arrowDown.png" alt="">
+    
+                            <div class="addDiagnosiscomment">
+                                    <textarea class="addtext" >
+                                            Here Write Diagnosis
+                                    </textarea>
+                                    <a class="sendbtn addNow" href="##"> ADD NOW</a>
                             </div>
-                            <form>
-                                    <input type="text" placeholder="Search Here Diagnosis.." class="search">
-                                    <div class="searchimg">
-                                        <img src="asset/img/search.png" alt="">
-                                    </div>
-                                    <div class="checboxCont">
-                                            <input type="checkbox" class="form-check-input" id="titleChecked" checked="checked" >
-                                            <label class="form-check-label" for="titleChecked">A Brief History Of Anesthetics</label>
-                                            <span class="customcheckmark"></span>
-                                    </div>
-                                    <div class="checkboxtable">
-                                            <input type="checkbox" class="medicinCheckbox" id="firstCB" >
-                                            <label class="checkboxLabel" for="firstCB">2 Fav Detox Home Recipe</label>
+                </div>
+                <div class="allergiesSec medicationSec ">
+                        <div class="medicationSectitles clearfix"><h4 class="allergiesSecTitle">MEDICATION</h4>
+                        
+                            <span>FREQUENCY</span>
+                            <span>DURATION</span></div>
+                            <div class="addcomment clearfix">
+                                <div class="addimg">
+                                        <img src="asset/img/add.png" alt="">
+                                </div>
+                               <a href="##"> <span class="commentTxt Addmedication ">Add Medication</span></a>
+                               <a href="##"> <span class="commentTxt frequency ">00 </span> <span class="addfreq"> + </span></a> 
+                               <a href="##"> <span class="commentTxt Duration ">DD/HH </span> <span class="addDuration"> + </span></a>                                            
+                           </div>
+                           <div class="medicationBox">
+                                <div class="arrowD">
+                                        <img src="asset/img/arrowDown.png" alt="">
+                                </div>
+                                <form>
+                                        <input type="text" placeholder="Search Here Diagnosis.." class="search">
+                                        <div class="searchimg">
+                                            <img src="asset/img/search.png" alt="">
+                                        </div>
+                                        <div class="checboxCont">
+                                                <input type="checkbox" class="form-check-input" id="titleChecked" checked="checked" >
+                                                <label class="form-check-label" for="titleChecked">A Brief History Of Anesthetics</label>
+                                                <span class="customcheckmark"></span>
+                                        </div>
+                                        <div class="checkboxtable">
+                                                <input type="checkbox" class="medicinCheckbox" id="firstCB" >
+                                                <label class="checkboxLabel" for="firstCB">2 Fav Detox Home Recipe</label>
+                                            
+                                        </div>
+                                        <div class="checkboxtable">
+                                                <input type="checkbox" class="medicinCheckbox" id="secondCB"  >
+                                                <label class="checkboxLabel" for="secondCB">Asperger S Syndrome Is There Real Cure For It</label>
+                                        </div>
+                                        <div class="checkboxtable">
+                                                <input type="checkbox" class="medicinCheckbox" id="thirdCB" >
+                                                <label class="checkboxLabel" for="thirdCB">Getting The Upper Hand On Asthma Allergy</label>
+                                        </div>
+                                        <div class="checkboxtable">
+                                                <input type="checkbox" class="medicinCheckbox" id="fourthCB"  >
+                                                <label class="checkboxLabel" for="fourthCB">Headaches And Botox Injections</label>
+                                        </div>
+                                        <div class="checkboxtable">
+                                                <input type="checkbox" class="medicinCheckbox" id="fifthCB"  >
+                                                <label class="checkboxLabel" for="fifthCB">The Back Chiropractor</label>
+                                        </div>
                                         
-                                    </div>
-                                    <div class="checkboxtable">
-                                            <input type="checkbox" class="medicinCheckbox" id="secondCB"  >
-                                            <label class="checkboxLabel" for="secondCB">Asperger S Syndrome Is There Real Cure For It</label>
-                                    </div>
-                                    <div class="checkboxtable">
-                                            <input type="checkbox" class="medicinCheckbox" id="thirdCB" >
-                                            <label class="checkboxLabel" for="thirdCB">Getting The Upper Hand On Asthma Allergy</label>
-                                    </div>
-                                    <div class="checkboxtable">
-                                            <input type="checkbox" class="medicinCheckbox" id="fourthCB"  >
-                                            <label class="checkboxLabel" for="fourthCB">Headaches And Botox Injections</label>
-                                    </div>
-                                    <div class="checkboxtable">
-                                            <input type="checkbox" class="medicinCheckbox" id="fifthCB"  >
-                                            <label class="checkboxLabel" for="fifthCB">The Back Chiropractor</label>
-                                    </div>
-                                    
-
-                            </form>
-
-                       </div>
-                       <div class="frequencyBox ">
-                           <h6 class="freqtext">FREQUENCY</h6>
-                           <span>A Brief History Of Anesthetics</span>
-                           <div class="scrolling-wrapper">
-                                <div class="card"><span>1</span></div>
-                                <div class="card"><span>2</span></div>
-                                <div class="card"><span>3</span></div>
-                                <div class="card"><span>4</span></div>
-                                <div class="card"><span>5</span></div>
-                                <div class="card"><span>6</span></div>
-                                <div class="card"><span>7</span></div>
-                                <div class="card"><span>8</span></div>
-                                <div class="card"><span>9</span></div>
-                                <div class="card"><span>10</span></div>
-                              </div>
-
-                    
-                       </div>
-                       <div class="DurationBox">
-                            <h6 class="Durationtxt">Duration</h6>
-                            <span>A Brief History Of Anesthetics</span>
-
-                
-
-                        </div>
-
+    
+                                </form>
+    
+                           </div>
+                           <div class="frequencyBox ">
+                               <h6 class="freqtext">FREQUENCY</h6>
+                               <span>A Brief History Of Anesthetics</span>
+                               
+    <div class="owl-carousel numberPicker">
+                          
+            <div class="item">
+                <div class="ca_item">
+                    <input type="radio" name="calc_color" value="2" data-type="colors" >
+                    <div class="calc_txt">1</div>
+                </div>
             </div>
-            <div class="allergiesSec commentssec">
-                   <div class="commentsTitle clearfix"><h4 class="allergiesSecTitle">COMMENTS</h4></div>
-                        <div class="addcomment clearfix">
-                            <div class="addimg">
-                                    <img src="asset/img/add.png" alt="">
-                            </div>
-                           <a href="##"> <span class="commentTxt AddComment">Add comment</span></a> 
-                        </div>
-                        <div class="commentBox">
-                            <form>
-                                <label> FULL NAME</label>
-                                <input type="text" placeholder="Here Write Full name">
-                                <label> EMAIL</label>
-                                <input type="email" placeholder="Here Write Full name">
-                                <label> MESSAGE</label>
-                                <textarea></textarea>
-                            </form>
-                            <div class="sendNow text-center">
-                                    <a class="sendbtn commentsend" href="##"> SEND NOW</a>
-                            </div>
-
-                        </div>
-
+            
+    <div class="item">
+                <div class="ca_item">
+                    <input type="radio" name="calc_color" value="2" data-type="colors" >
+                    <div class="calc_txt">2</div>
+                </div>
             </div>
-            <div class="sendNow text-center">
-                    <a class="sendbtn" href="##"> SEND NOW</a>
+            
+    <div class="item">
+                <div class="ca_item">
+                    <input type="radio" name="calc_color" value="2" data-type="colors" >
+                    <div class="calc_txt">3</div>
+                </div>
             </div>
-         
-
+            
+    <div class="item">
+                <div class="ca_item">
+                    <input type="radio" name="calc_color" value="2" data-type="colors" >
+                    <div class="calc_txt">4</div>
+                </div>
+            </div>
+            
+    
+            
         </div>
+     
+    
+                        
+                           </div>
+                           <div class="DurationBox">
+                                <h6 class="Durationtxt">Duration</h6>
+                                <span>A Brief History Of Anesthetics</span>
+    
+                    
+    
+                            </div>
+    
+                </div>
+                <div class="allergiesSec commentssec">
+                       <div class="commentsTitle clearfix"><h4 class="allergiesSecTitle">COMMENTS</h4></div>
+                            <div class="addcomment clearfix">
+                                <div class="addimg">
+                                        <img src="asset/img/add.png" alt="">
+                                </div>
+                               <a href="##"> <span class="commentTxt AddComment">Add comment</span></a> 
+                            </div>
+                            <div class="commentBox">
+                                <form>
+                                    <label> FULL NAME</label>
+                                    <input type="text" placeholder="Here Write Full name">
+                                    <label> EMAIL</label>
+                                    <input type="email" placeholder="Here Write Full name">
+                                    <label> MESSAGE</label>
+                                    <textarea></textarea>
+                                </form>
+                                <div class="sendNow text-center">
+                                        <a class="sendbtn commentsend" href="##"> SEND NOW</a>
+                                </div>
+    
+                            </div>
+    
+                </div>
+                <div class="sendNow text-center">
+                        <a class="sendbtn" href="##"> SEND NOW</a>
+                </div>
+             
+    
+            </div>
     </div>
 
      <!--Call Java Script Files-->
      <script src="asset/js/jquery.min.js"></script>
      <script src="asset/js/popper.min.js"></script>
      <script src="asset/js/bootstrap.min.js"></script>
-
+     <script src="asset/js/responsive-paginate.js"></script>
+     <script src="asset/js/owl.carousel.js"></script>
      <script src="asset/js/main.js"></script>
 
      
