@@ -49,7 +49,7 @@ $(document).ready(function () {
             $(".DoctorNotify").css( "display","block");
           });
           $(".optionbtn").click(function() {
-            $(this).find(".sendstatusOption").css( "display","block");
+            $(this).parent().find(".statusBox").toggle();
             
            
             
@@ -115,13 +115,5 @@ $(document).ready(function () {
         }
 });
 
-$(".datePicker").owlCarousel({
-    loop: true,
-  autoplay: true,
-  items: 1,
-  nav: true,
-  animateOut: 'slideOutUp',
-  animateIn: 'slideInUp'
-  
-  });
+
 });

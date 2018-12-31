@@ -1038,7 +1038,9 @@ margin-left:40px;
 }
 .datePicker .item{
 display: block;
+color:black;
 }
+
 input[type=radio] {
     display:none; 
     margin:10px;
