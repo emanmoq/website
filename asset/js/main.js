@@ -37,19 +37,22 @@ $(document).ready(function () {
       });
       
       $(".notification").click(function() {
-        $(".notificationBox").slideDown();
+        $(".notificationBox").slideToggle(400);
 
       });
       $(".orderNotification").click(function() {
-            $(".notificationBox").slideDown( );
+            $(".notificationBox").slideToggle(400);
 
           });
           $(".doctornotification").click(function() {
             $(".notificationBox").css( "display","block");
             $(".DoctorNotify").css( "display","block");
           });
-          $(".statusoptions").click(function() {
+          $(".sendstatus").click(function() {
+            $(this).css( "position","relative");
             $(".statusBox").css( "display","block");
+           
+            
           });
           $(".moreDetailsOrder").click(function(){
             $("PatientBox").css("display","block");
@@ -111,4 +114,7 @@ $(document).ready(function () {
           
         }
 });
+
+
+
 });

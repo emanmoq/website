@@ -601,7 +601,7 @@ padding:8px 13px;
 	font-family: 'Montserrat', sans-serif;
 	display: block;
 	z-index: 2;
-	display: block;
+	display: none;
 }
 select option{
 	display: inline;
@@ -1043,7 +1043,7 @@ input[type=radio] {
 .calc_txt{
 	font-size:15px;
 	color:#C3C3C3;
-	padding:8px 16px;
+	padding:8px 13px;
 	border-radius:50%;
 }
 .calc_txt:hover{
@@ -1061,6 +1061,9 @@ input[type=radio] {
 	left: 54%;
 	display:none;
 }
+/****** DATE picker*********/
+
+
 .commentBox{
 	background-color:white; 
 	width:365px;
@@ -1157,6 +1160,12 @@ margin-bottom:28px;
 	font-size:14px;
 	margin-bottom:20px;
 }
+.newOrder:hover{
+	text-decoration:none;
+	color:white;
+	background-color: rgba(255,255,255,.4);
+
+}
 .newOrderbtn{
 	margin-top:40px;
 	margin-bottom:200px;
@@ -1176,8 +1185,9 @@ margin-bottom:28px;
 	margin-right:192px;
 	display: block;
 	z-index: 5;
-	display: none;
+	display:none;
 }
+
 .notificationTitle{
 font-family: 'Montserrat', sans-serif;
 color:black;
@@ -1632,6 +1642,9 @@ margin-left:30px;
 }
 .modicationTitle .leftOrder{
 	font-size:27px !important;
+
+		margin-bottom: 29px;
+
 }
 .pharmacyBox {float:none !important;
 margin:0 auto;
@@ -1646,7 +1659,40 @@ margin-bottom: 10px;}
 }
 .orderTitle h6 {
     font-size: 29px;}
+
+
+.notificationBox {
+	float:none !important;
+	width: 336px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 30px;
 }
-.table-responsive{
-	display: table;
+.profile{
+	margin-left:25px;
+}
+.notification, .logout {
+    height: 26px;
+    width: 25px;
+	margin-left: 0;
+	margin-right:0;
+
+}
+.logo {
+
+    margin-left: 25px;
+}
+.arrowUp {
+
+    right: 36px;
+}
+.PatientBox {
+    width: 300px;
+    position: absolute;
+    border-radius: 5px;
+    padding: 35px 27px;
+    padding-right: 20px;
+    top: 20%;
+	left: 15%;}
+	
 }
