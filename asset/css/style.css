@@ -493,7 +493,6 @@ font-weight: lighter;
   }
   .lasttd{
 	  color:#5867DD;
-	  position: relative;
   }
   .lasttd p{
 	  max-width: 431px;
@@ -512,6 +511,9 @@ font-weight: lighter;
   }
   .sendstatus{
 	  background-color: #CCCACA;
+  }
+  .optionbtn{
+	  position: relative;
   }
   .donestatus{
 	  background-color: #6F42C1;
@@ -606,6 +608,7 @@ padding:8px 13px;
 	display: block;
 	z-index: 2;
 	display: none;
+
 }
 select option{
 	display: inline;
@@ -914,7 +917,7 @@ border-radius: 50%;
     left: 6%;
     top: 31%;
 	z-index: 5;
-	display: none;
+	display: block;
 }
 .medicationBox .arrowD{
 	position: absolute;
@@ -1300,6 +1303,7 @@ font-size:8px;
 	color:white;
 	height: 100%;
 	font-family: 'Montserrat', sans-serif;
+	position: relative;
 }
 .PhsignBox{
 	margin-bottom:190px;
@@ -1349,6 +1353,7 @@ font-size:14px;
 	   background-image: linear-gradient(to right,#3023AE, #9B6DD7);
 	   color:white;
 	}
+
 	.moreDetailsOrder:hover{
 		text-decoration: none;
 		color:white;
@@ -1374,7 +1379,7 @@ font-size:14px;
 		background-color: white;
 		border-radius: 5px;
 		position: absolute;
-		bottom: -85px;
+		bottom: -122px;
 		left: -5px;
 		border: 1px #DFDFDF solid;
 	z-index: 5;
@@ -1716,14 +1721,7 @@ margin-bottom: 10px;}
 
     right: 36px;
 }
-.PatientBox {
-    width: 300px;
-    position: absolute;
-    border-radius: 5px;
-    padding: 35px 27px;
-    padding-right: 20px;
-    top: 20%;
-	left: 15%;}
+
 
 	.orderTable{
 		width:600px;

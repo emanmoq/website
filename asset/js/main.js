@@ -50,18 +50,16 @@ $(document).ready(function () {
           });
           $(".optionbtn").click(function() {
             $(this).parent().find(".statusBox").toggle();
-            
-           
-            
+                        
           });
           $(".moreDetailsOrder").click(function(){
-            $("PatientBox").css("display","block");
+            $(this).parent().find(".PatientBox").css("display","block");
             $(".overlay").css("display","block");
     
         });
           /******************** */
           $(".addNewpharmacy").click(function(){
-            $("addNewPharmacyBox").css("display","block");
+            $(".addNewPharmacyBox").css("display","block");
             $(".overlay").css("display","block");
     
         });
