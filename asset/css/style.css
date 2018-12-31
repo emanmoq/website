@@ -13,11 +13,12 @@ body{
 img{
 	width:100%;
 }
-.navbar-light .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;..");
-  }
+
 .bg-light{
 	background: transparent !important;
+}
+.navbar-light .navbar-toggler-icon {
+background-image:none;
 }
 .logo{
 	width:65px;
@@ -434,6 +435,9 @@ margin:0 auto;
 	font-size:16px;
 	color:white;
 	float:right;
+}
+.newOrder.NewOrderNav{
+	float:none;
 }
 .lastOrderBox{
 	width:100%;
@@ -1032,6 +1036,9 @@ margin-left:40px;
 .item{
 	display:inline-block;
 }
+.datePicker .item{
+display: block;
+}
 input[type=radio] {
     display:none; 
     margin:10px;
@@ -1602,8 +1609,8 @@ margin-left:30px;
 	.orderTable thead tr th,.orderTable tbody  tr td{
 		font-size: 10px;}
 	.lasttd span,.lasttd a{
-		font-size:8px;
-		float:none !important;
+		font-size:14px;
+	
 	}
 	.centerTitle{
 		margin:0 auto;
@@ -1613,7 +1620,6 @@ margin-left:30px;
 	
 	}
 	.pagination{
-		float:none;
 		justify-content:center !important;
 	}
 	.emptyOrderImage {
@@ -1694,5 +1700,15 @@ margin-bottom: 10px;}
     padding-right: 20px;
     top: 20%;
 	left: 15%;}
+
+	.orderTable{
+		width:600px;
 	
+	}
+	.navbar-toggler {
+		color:white !important;
+		border-color: white !important;}
+.phOrderTable{
+	width:750px;
+}	
 }
