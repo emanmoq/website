@@ -3152,7 +3152,17 @@ $(".owl-carousel.datePicker").owlCarousel({
     height:'100',
   loop: true,
   autoplay: false,
-  items: 7,
+  items: 4,
+  vertical:true,
+  autoplayHoverPause: true,
+  animateOut: 'slideOutUp',
+  animateIn: 'slideInUp'
+});
+$(".owl-carousel.timePicker").owlCarousel({
+    height:'100',
+  loop: true,
+  autoplay: false,
+  items: 4,
   vertical:true,
   autoplayHoverPause: true,
   animateOut: 'slideOutUp',

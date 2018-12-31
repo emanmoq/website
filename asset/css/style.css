@@ -1036,11 +1036,25 @@ margin-left:40px;
 .item{
 	display:inline-block;
 }
-.datePicker .item{
-display: block;
-color:black;
+.datePicker ,.timePicker{
+	height:120px;
+	width:45px;
+overflow: hidden;
+margin-top:20px;
 }
 
+.datePicker .owl-item,.timePicker .owl-item {
+	display: block;
+}
+.datePicker  .owl-item .item,.timePicker  .owl-item .item{
+color:black;
+font-size:12px;
+margin-top:15px;
+}
+
+.datePicker  .item:hover{
+	font-size:14px;
+}
 input[type=radio] {
     display:none; 
     margin:10px;
@@ -1069,6 +1083,14 @@ input[type=radio] {
     width: 155px;
 	left: 54%;
 	display:none;
+}
+.DurationBox h5{
+	color:#865FCF;
+	font-size:12px;
+	margin-bottom:10px;
+}
+.carosel-cont{
+	margin-top:15px;
 }
 /****** DATE picker*********/
 
@@ -1713,4 +1735,10 @@ margin-bottom: 10px;}
 .phOrderTable{
 	width:750px;
 }	
+.status {
+    padding: 6px 22px;
+	font-size: 9px;}
+	.cancelstatus {
+		padding: 6px 15px;
+	}
 }
