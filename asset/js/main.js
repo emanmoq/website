@@ -28,7 +28,10 @@ $(document).ready(function () {
         $(this).parent().find(".showMore").css("display","block");
     });
   /*********************************** */
-
+  $('.overlay').click(function () {
+    $(this).css("display","none");
+    $(this).parent().find(".showMore").css("display","block");
+});
 /******************************** */
 
       $(".Duration").click(function() {

@@ -10,10 +10,19 @@ body{
 	color:white;
 	height: 100%;
 }
+.aboutimg{
+	width:572px;
+	height:422px;
+	margin:0 auto;
+
+}
+.mainMenu .nav-item {
+    margin-left: 13px !important;
+}
 img{
 	width:100%;
 }
-
+/*****************NavBar***********************/
 .bg-light{
 	background: transparent !important;
 }
@@ -21,36 +30,38 @@ img{
 background-image:none;
 }
 .logo{
-	width:65px;
-	height: 55px;
+	width:59px;
+	height: 54px;
 }
 .logo img{
 	width:100%;
 }
 .navbar{
-padding-top:35px;
+padding-top:33px;
+
 }
+
 .navbar-nav{
-	margin-left:50px;
+	margin-left:192px;
+	margin-top: 5px;
+
 }
 .nav-link{
 	color:white !important;
 	font-family: 'Montserrat', sans-serif;
-	font-size:16px;
-	padding:9px 15px !important;
+	font-size: 15px !important;
+		padding:6px 15px !important;
+	font-weight: 100;
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
 }
 .nav-item{
-	padding-left:35px !important;
+	margin-left:20px !important;
 }
-.sectionTitle{
-	font-size: 20px;
-}
-
-
-.section{
-	padding:45px 0;
-}
-
 .profile{
 	margin-right:45px;
 	margin-left:25px;
@@ -68,19 +79,24 @@ padding-top:35px;
 	margin-top:10px;
 }
 .personalName{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
 	font-size:16px;
-    padding-bottom: 0;
-    margin-bottom: 0
+	margin-bottom:0;
+	padding-bottom:0;
 }
 .personalDesc span{
-	margin-top:0;
-	font-size:12px;
+	font-family: Montserrat;
+	font-size: 12px;
 }
 .notification,.logout{
-	height: 30px;
-	width: 30px;
-	margin-right:20px;
-
+	height: 28px;
+	width: 28px;
+	margin-right:21px;
+}
+.logout{
+	margin-right: 0;
 }
 .notification{
 	position: relative;
@@ -88,16 +104,30 @@ padding-top:35px;
 .notification img,.logout img{
 		background-color: rgba(255,255,255,.2);
 	border-radius: 50%;
-	padding:5px;
+	padding:6px;
 }
 .active{
-background-color: rgba(255,255,255,.2);
-border-radius: 20px;
+background-color: rgba(255,255,255,.12);
+border-radius: 15.5px;
 }
 .nav-link:hover{
 background-color: rgba(255,255,255,.2);
 border-radius: 20px;
 }
+/*******************End NavBar**************************/
+.sectionTitle{
+	font-size: 20px;
+}
+.sectionTitle h3{
+	font-size:34px;
+	font-weight: bold;
+}
+
+.section{
+	padding:45px 0;
+}
+
+
 .FAQ p ,.FAQ h6 ,.copyRight span{
 	font-size: 14pt;
 }
@@ -111,6 +141,7 @@ border-radius: 20px;
 .copyRight{
 	margin-top:40px;
 }
+
 /******************Setting page**************/
 .settingBox{
 	width:100%;
@@ -192,6 +223,7 @@ text-decoration: none;
 .orderTitle span{
 	font-size: 35px;
 	font-weight: bold;
+	font-family:'Roboto', sans-serif;
 }
 .orderTitle h6{
 	font-size: 35px;
@@ -235,8 +267,8 @@ font-size:10px;
 	color:#A8B6C8;
 }
 .formImg{
-	width: 15px;
-    height: 15px;
+	width: 9px;
+    height: 11px;
     position: absolute;
     top: 23px;
     left: 20px;
@@ -296,16 +328,20 @@ text-decoration: none;
 .signBox,.PhsignBox{
 	width:100%;
 	height:auto;
-	border-radius: 10px;
+	border-radius: 9px;
 	background-color: white;
 	padding:43px 40px;
 	position: relative;
 }
+.signBox{
+	margin-top:175px;
+}
 .signtext{
 	color:#4F38B9;
 	margin-bottom:28px;
-	font-size:24pt;
+	font-size:24px;
 	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
 }
 .formControl.SignFormControl input::placeholder{
 	font-size: 16px;
@@ -340,6 +376,9 @@ padding:11px 110px !important;
 	font-size:34px;
 }
 /**********************Sign Up page*******************/
+.signBox.signup{
+margin-top:70px;
+}
 .Register{
 padding:12px 103px !important;
 }
@@ -436,9 +475,7 @@ margin:0 auto;
 	color:white;
 	float:right;
 }
-.newOrder.NewOrderNav{
-	float:none;
-}
+
 .lastOrderBox{
 	width:100%;
 	height:auto;
@@ -450,14 +487,17 @@ margin:0 auto;
 
 }
 .LastOrderTitle{
-	border-bottom: 1px solid #E8E8E8;
-padding: 45px 0 29px 0;
+	border-bottom: 1px solid #ebedf2;
+	padding: 38px 37px 24px 37px;
 }
 .LastOrderTitle h2{
 	font-size:18px;
 	font-weight: bold;
-	color:black;
-	margin-left:27px;
+	color:#575962;
+	margin:0;
+	font-family:'Roboto', sans-serif;
+	margin-top:5px;
+
 }
 .orderTable{
 	width:100%;
@@ -466,10 +506,11 @@ padding: 45px 0 29px 0;
 	margin-top:7px;
 }
 
-.orderTable tr td{
-border:0;
+.orderTable tr{
+border:1px solid #f2f2f2;
+
 }
-.orderTable tr:nth-child(odd){
+.orderTable tr:nth-child(even){
 background-color: #F4F5F8;
 }
 
@@ -477,20 +518,19 @@ background-color: #F4F5F8;
 	background-color: white !important;
 	border:0;
 }
-.orderTable thead tr th,.orderTable tbody  tr td{
+.orderTable tbody  tr td{
+	vertical-align: middle;
 	font-size: 14px;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-weight: lighter;
+	color:#575962;
+	line-height: 11px;
 }
-.orderTable thead tr {
-	width:100%; 
-	vertical-align: middle; 
-	text-align: left;
-	background-color: #F4F5F8;
-  }
-  .orderTable tbody  tr td{
-font-weight: lighter;
-  }
+.table thead th {
+  
+	 border-bottom:0; }
+	 
+
   .lasttd{
 	  color:#5867DD;
   }
@@ -503,11 +543,15 @@ font-weight: lighter;
 	  color:#8C8C8C;
   }
   .status{
-	  padding:6px 31px;
+	  width:70px;
+	  height: 21px;
 	  font-size:11px;
 	  font-family: 'Poppins', sans-serif;
 	  color:white;
-	  border-radius:20px;
+	  border-radius:11px;
+	  text-align: center;
+	  line-height: 21px;
+	  margin-top: 9px;
   }
   .sendstatus{
 	  background-color: #CCCACA;
@@ -555,6 +599,7 @@ font-weight: lighter;
   }
 .pagination{
 	float:left;
+
 }
 .page-link{
 	border-radius: 50%;
@@ -595,20 +640,30 @@ padding:8px 13px;
 	display:none;
 }
 .PatientBox{
-    width: 394px;
-    position: absolute;
-    border-radius: 5px;
-	padding: 35px 50px;
-	padding-right: 20px;
-    top: 20%;
-	left: 33%;
-	background-color: white;
-	color:black;
-	font-family: 'Montserrat', sans-serif;
-	display: block;
-	z-index: 2;
-	display: none;
+	 font-family: 'Montserrat', sans-serif;	 	
+	width:395px;
+	margin: auto;
+	color:#4a4a4a;
+ }
+ .modal{
+	border-radius: 9px;
+ }
+ .modal-content{
+	padding:42px 16px 30px 14px;
 
+ }
+ .modal-header{
+	 border-bottom:0;
+ }
+
+
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+	overflow-y: auto;
+	max-height: 495px;
 }
 select option{
 	display: inline;
@@ -643,17 +698,19 @@ select{
 	float:right;
 }
 .PatientBoxTitle{
-	font-size:24;
-	
-	color:black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
 	font-weight: bold;
-margin-top:20px;
-margin-bottom: 5px;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0px;
+	color: #4a4a4a;
 	
 }
 .PatientNum{
 	font-size: 14px;
-	margin-top:0;
+	color: #000;
 }
 .PatientBox form .formControl .formImg{
 	top: 31px;
@@ -785,72 +842,10 @@ left:7px;
 		
 	  }
 
-  /*.allergiesswitch {  max-width: 70px;
-}
-.switch6-light{
-  color: #8D8D8D ;
-  background-color:#F4F4F4 ; 
-  border:1px solid #E6E6E6;
-  border-radius: 5px;
-  top: -7px;
-  left: 249px;
-  display: block;
-   height: 30px;
-    position: relative; 
-   overflow: visible; padding: 0px;
-
-	margin:0;
-}
-.switch6-light > span, .switch-toggle > span { font-size:10px ;}
-.switch6-light span span, .switch6-light label, .switch-toggle span span, .switch-toggle label {  color: #8D8D8D; }
-
-.switch-toggle a, 
-.switch6-light span span { display: none;
-   }
-
-
-.switch6-light a { display: block;
-	 transition: all 0.3s ease-out 0s; color:white; }
-
-.switch6-light label, 
-.switch6-light > span { 
-	text-align: center;
-	line-height: 30px;
-	vertical-align: middle;}
-
-.switch6-light label {
-	font-weight: 700;
-	 max-width: 100%;}
-
-.switch6-light input { position: absolute;
-	 opacity: 0; 
-	 z-index: 5; }
-.switch6-light input:checked ~ a { right: 0%; }
-.switch6-light > span { position: absolute;
-	 left: -100px;
-	  width: 100%; 
-	  margin: 0px;
-	   padding-right: 100px;
-	    text-align: left; }
-.switch6-light > span span { 
-	position: absolute;
-    display: block;
-	margin-left: 106px;
-}
-.switch6-light > span span:last-child { left: 40%; }
-.switch6-light a { position: absolute; 
-	right: 50%; 
-	top: 0px; z-index: 4;
-	 display: block; 
-	 width: 50%; 
-	 height: 100%;
-	  padding: 0px;
-	  border-radius: 5px }
-	  .btn-secondary{
-		  background-color: #B4B4B4;
-		  border:0;
-	  }*/
-
+  
+	  .medicationSecTable thead{
+		  background-color: white;
+	  }
 .addimg{
 width:17px;
 height: 17px;
@@ -1214,22 +1209,24 @@ margin-bottom:28px;
 .notificationBox{
 	float: right;
 	width: 350px;
-	position: relative;
-	margin-top:30px;
-	margin-right:192px;
-	display: block;
+	position: absolute;
+	top:30px;
+	right:192px;
 	z-index: 5;
 	display:none;
+	background-color: white;
+	padding:37px 18px 20px 18px;
+	border-radius: 9px;
 }
 
 .notificationTitle{
 font-family: 'Montserrat', sans-serif;
-color:black;
+color:#4a4a4a;
+font-size: 20px;
 
 }
 .notificationTitle h4{
-	font-size:20px;
-}
+font-weight: bold;}
 .notificationTitle span{
 	font-size:12px;
 }
@@ -1290,6 +1287,10 @@ font-size:8px;
 	text-decoration: underline;
 	margin-top:23px;
 }
+.loadMore:hover{
+	color:#4A90E2;
+	text-decoration:none;
+}
 .load{
 	margin-top:23px;
 }
@@ -1309,10 +1310,10 @@ font-size:8px;
 	margin-bottom:190px;
 }
 .phLogo{
-	width:112px;
+	width:113px;
 	height:106px;
 	margin:0 auto;
-	margin-bottom:45px;
+	margin-bottom:48px;
 }
 .signInTitle{
 	
@@ -1321,38 +1322,93 @@ font-size:8px;
 }
 .signInTitle h6{
 	font-size:34px;
+	font-weight: 800;
 }
 .signInTitle span{
 font-size:14px;
 }
-.FormTitle h6{
-	font-size:24px;
-	color:#4F38B9;
+.PhsignBox .FormTitle h6{
+	font-size: 24px;
+	font-weight: 800;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #4f38b9;
+	margin-left: 6px;
+}
+.PhsignBox form{
+	margin-top:25px;
 }
 .PhSignFormControl{
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #ffffff;
 	margin-bottom:20px;
 }
+.PhSignFormControl::placeholder{
+	font-size:18px;
+	font-family: 'Montserrat', sans-serif;
+	color:#a8b6c8;
+	padding-left:68px;
+}
+
 .loginPh{
 	margin-top:40px;
 	
 	}
 	.loginBtn{
-		padding:15px 109px !important;
+	padding:15px 107px;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 16px;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		text-align: center;
+		color: #ffffff;
+	}
+	.loginBtn:hover{
+		color:white;
 	}
 	/************Pharmacy home page**************/
+	.searchorder{
+		width:32px;
+		height: 32px;
+	}
 	.doctorImg{
 		height:55px;
 		width:55px;
 	}
 	.phOrderTable tbody tr td{
-		vertical-align: middle;}
+		color:#575962;
+	}
+	.orderTable thead {
+		background-color: #F4F5F8 !important;
+	}
+	.OrderTable thead tr th{
+		line-height: 21px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		color:#575962;
+		font-size: 14px;
+	}
 
 	.moreDetailsOrder{
-		padding:7px 25px;
-	border-radius:20px;
-	   background-image: linear-gradient(to right,#3023AE, #9B6DD7);
-	   color:white;
-	}
+		width: 118px;
+		height: 36px;
+		border-radius: 18px;
+		background-image: linear-gradient(107deg, #3023ae, #9b6dd7);
+		text-align: center;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 13px;
+		font-weight: 500;
+		color: #ffffff !important;
+		line-height: 36px;
+	  }
+	
 
 	.moreDetailsOrder:hover{
 		text-decoration: none;
@@ -1360,58 +1416,64 @@ font-size:14px;
 		box-shadow:0 0 2px 2px rgba(48,35,174,0.4)
 	}
 	.phOrderTable .sendstatus{
-		padding-right:10px;
 		position: relative;
 	}
 	.statusoptions{
-		margin-top:3px;
-		padding-left:15px;
-		color:white !important;
-		font-size:10px;
+		margin-right: 7px;
+		margin-top: 6px;
+		color: white !important;
+		font-size: 8px;
 	}
 	.DoctorNotify{
 		display: none;
 	}
 
-	.statusBox{
+	.statusBox {
 		width: 155px;
-		padding: 20px 15px;
+		height: auto;
+		padding: 25px 16px 5px 15px;
 		background-color: white;
 		border-radius: 5px;
 		position: absolute;
-		bottom: -122px;
-		left: -5px;
-		border: 1px #DFDFDF solid;
-	z-index: 5;
-display: none;}
-.statusBox::after{
-	border-bottom-style: solid;
-    content: "";
-    display: block;
-    height: 0;
-    position: absolute;
-    width: 0;
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff;
-    -o-border-image: none;
-    border-image: none;
-    border-style: solid;
-    border-width: 8px;
-	right: 50px;
-    top: -15px;
-    z-index: 98
+		bottom: -133px;
+		left: -44px;
+		border: 1px #dfdfdf solid;
+		z-index: 5;
+		display: none
+	}
+	.statusBox:before,
+.statusBox:after{
+	
+	content: ' ';
+	display: block;
+	border-style: solid;
+	border-width: 0 .5em .8em .5em;
+	border-color: transparent;
+	position: absolute;
+    left: 6em;	
 }
+.statusBox:before {
+	top: -.7em;
+	border-bottom-color: #dfdfdf;
+  }
+  
+  .statusBox:after {
+	top: -.6em;
+	  border-bottom-color: #fff;
+  }
 .statusColor{
-    margin-top: 5px;
     border-radius: 50%;
-    width: 7px;
-    height: 7px;
+    width: 9px;
+    height: 9px;
     margin-right: 5px;
 }
 
 .sendstatusOption a{
-	font-family:'Roboto', sans-serif;
-	font-size:12px;
+	font-size:11px;
 	color:#848484;
+}
+.sendstatusOption {
+	margin-bottom:12px;
 }
 /********************Doctor Managment**********************************/
 .right-doctor-managment a,.newMed a{
@@ -1611,12 +1673,34 @@ margin-left:30px;
 	color:white;
 }
 .aprrovedandCancelled{
-	margin-top:45px !important;
+	margin-top:40px !important;
 	margin:0 auto;
 }
 .aprrovedandCancelled a:last-child{
 	margin-left:10px;
 }
+/*****************************************/
+::-webkit-scrollbar {
+	width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #888; 
+	height: 157px;
+
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #d4d4d4; 
+  }
+  
 /****************mobile*********************/
 @media (min-width: 300px) and (max-width: 767px){
 	.aboutbg{
@@ -1633,8 +1717,12 @@ margin-left:30px;
 		.sectionTitle{
 			font-size:18px;
 		}
+		.orderTitle{
+			margin-top:50px;
+		}
 		.orderTitle span {
 			font-size: 26px;}
+			
 	.orderTable thead tr th,.orderTable tbody  tr td{
 		font-size: 10px;}
 	.lasttd span,.lasttd a{
@@ -1648,16 +1736,14 @@ margin-left:30px;
 		margin-right: 32px;
 	
 	}
-	.pagination{
-		justify-content:center !important;
-	}
+	
 	.emptyOrderImage {
 		width: 258px;
 		height: 218px;
 		margin-top: 70px;
 	}	
 	.lastOrderContainer {
-		padding: 18px 10px;
+		padding: 20px 30px;
 	}
 	.medicationItem {
 		margin-top: 13px;
@@ -1673,7 +1759,7 @@ margin-left:30px;
     font-size: 9px;
 }
 .pagination {
-	margin-top: 15px;
+	justify-content:center !important;
 }
 .modicationTitle .leftOrder{
 	font-size:27px !important;
@@ -1696,13 +1782,17 @@ margin-bottom: 10px;}
     font-size: 29px;}
 
 
-.notificationBox {
-	float:none !important;
-	width: 336px;
-    position: relative;
-    margin-top: 30px;
-    margin-left: 30px;
-}
+	.notificationBox {
+		float: right;
+		width: 350px;
+		position: absolute;
+		top: 30px;
+		right: 192px;
+		display: block;
+		z-index: 5;
+		display: none;
+		background-color: white;
+	}
 .profile{
 	margin-left:25px;
 }
@@ -1713,10 +1803,7 @@ margin-bottom: 10px;}
 	margin-right:0;
 
 }
-.logo {
 
-    margin-left: 25px;
-}
 .arrowUp {
 
     right: 36px;
