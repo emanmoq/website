@@ -1249,13 +1249,17 @@ font-weight: bold;}
 	padding:15px;
 	border-radius: 5px;
 	line-height:15px;
+	box-shadow: 0 2px 8px 5px rgba(89, 89, 89, 0.13);
 }
+
 
 .dropdownItemImage{
 	width:25px;
 	height:25px;
 	line-height: 20px;
 	border-radius: 50%; 
+	border-radius: 5px;
+	
 }
 .dropdownItemImage img{
 	padding:5px;
