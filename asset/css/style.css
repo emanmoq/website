@@ -1221,13 +1221,15 @@ margin-bottom:28px;
 .notificationTitle{
 font-family: 'Montserrat', sans-serif;
 color:#4a4a4a;
-font-size: 20px;
 
 }
 .notificationTitle h4{
-font-weight: bold;}
+	font-size:20px;
+font-weight: bold;
+margin-bottom:0;}
 .notificationTitle span{
 	font-size:12px;
+	margin-top:0;
 }
 .approve{
 	margin-top: 10px;
