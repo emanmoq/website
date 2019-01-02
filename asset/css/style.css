@@ -19,16 +19,16 @@ body{
 .mainMenu .nav-item {
     margin-left: 13px !important;
 }
+.mainMenu .newOrder {
+	float: none;}
 img{
 	width:100%;
 }
 /*****************NavBar***********************/
-.bg-light{
+.bg-dark{
 	background: transparent !important;
 }
-.navbar-light .navbar-toggler-icon {
-background-image:none;
-}
+
 .logo{
 	width:59px;
 	height: 54px;
@@ -39,6 +39,9 @@ background-image:none;
 .navbar{
 padding-top:33px;
 
+}
+.navbar-brand{
+	display:inherit;
 }
 
 .navbar-nav{
@@ -91,8 +94,6 @@ padding-top:33px;
 	font-size: 12px;
 }
 .notification,.logout{
-	height: 28px;
-	width: 28px;
 	margin-right:21px;
 }
 .logout{
@@ -100,11 +101,7 @@ padding-top:33px;
 }
 .notification{
 	position: relative;
-}
-.notification img,.logout img{
-		background-color: rgba(255,255,255,.2);
-	border-radius: 50%;
-	padding:6px;
+
 }
 .active{
 background-color: rgba(255,255,255,.12);
@@ -608,9 +605,11 @@ background-color: #F4F5F8;
 	  float:left;
   }
 .pagination{
-	float:left;
-	margin-top: 20px;
-
+	float:none;
+margin-top: 60px;
+}
+.lastOrderBox{
+	padding-bottom:20px;
 }
 .page-link{
 	border-radius: 50%;
@@ -915,8 +914,10 @@ border-radius: 50%;
 	border-radius: 9px;
 	box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.03);
 	background-color: #ffffff;
-
-
+}
+.addDiagnosiscomment .triangleDown{
+	top: 243px;
+    left: 20px;
 }
 .sendbtn.addNow {
     margin-top: 20px;
@@ -961,6 +962,12 @@ border-radius: 50%;
     box-shadow: 4px 4px 5px -1px rgba(0,0,0,.03);
     
     border: 1px solid #dfdfdf;
+}
+.medicationBox .triangleDown{
+	top: 290px;
+    left: 13px;
+    width: .6em;
+    height: .6em;
 }
 
 .searchimg{
@@ -1070,7 +1077,7 @@ object-fit: contain;
 }
 .frequencyBox{
 	position: absolute;
-	bottom: -69px;
+	bottom: -65px;
 	left:0;
 	width:320px;
 	padding-bottom:0  !important;
@@ -1080,6 +1087,10 @@ object-fit: contain;
 z-index: 10;
 
 }
+.frequencyBox .triangleDown{
+	top: 162px;
+    left: 152px;
+}
 .frequencyBox .calc_txt{
 	margin-left: 20px
 } 
@@ -1088,9 +1099,10 @@ z-index: 10;
 }
 .datePicker ,.timePicker{
 	height:120px;
-	width:45px;
+	width:70px;
 overflow: hidden;
 margin-top:20px;
+
 }
 
 .datePicker .owl-item,.timePicker .owl-item {
@@ -1110,17 +1122,26 @@ input[type=radio] {
     margin:10px;
 }
 .numberPicker{
-	margin-top:30px;
-	margin-bottom: 40px;
+	margin-top:20px;
+	margin-bottom: 30px;
 }
-.calc_txt{
+.numberPicker .owl-stage-outer{
+	padding-top:10px !important;
+	padding-bottom: 10px !important;
+}
+.DurationBox .owl-stage-outer{
+	padding-left :10px !important;
+	padding-right :10px !important;
+}
+.calc_txt a{
 	font-size:15px;
 	color:#C3C3C3;
 	padding:8px 13px;
 	border-radius:50%;
 	font-weight: 600;
 }
-.calc_txt:hover{
+.item:hover .calc_txt a {
+	text-decoration: none;
 	color:white;
 	background-image: linear-gradient(135deg, #3023ae, #9b6dd7);
 	box-shadow: 0 0 2px 2px rgba(155,109,215,0.31)
@@ -1165,8 +1186,10 @@ input[type=radio] {
 	color: #858585;
 }
 .DurationBox .triangleDown{
-	bottom: -88px;
-    left: 28px;
+	width: .6em;
+    left: 110px;
+    top: 265px;
+    height: .6em;
 }
 .DurationBox h5{
 	color:#865FCF;
@@ -1176,7 +1199,8 @@ input[type=radio] {
 }
 .carosel-cont{
 	margin-top:15px;
-	margin-left:25px;
+	margin-left:5px;
+	text-align: center;
 }
 /****** DATE picker*********/
 
@@ -1317,7 +1341,7 @@ margin-bottom:28px;
 .triangle:after {
 	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
 }
-/*******************down triangle*******************/
+/*******************down triangle*******************
 .triangleDown {
     position: absolute;
     width: 15px;
@@ -1327,12 +1351,18 @@ margin-bottom:28px;
     border-radius: 0 0 0.1em 0;
     margin: 5em;
     transform: rotate(45deg);
-    background: linear-gradient(-45deg, white 50%, transparent 50%);
-    border-bottom: 1px solid #dfdfdf;
-	border-right: 1px solid #dfdfdf;
-	box-shadow: 4px 4px 5px -1px rgba(0,0,0,.03);
+    background: linear-gradient(-45deg, white 50%, transparent 50%);}
+    */
 
-}
+
+.triangleDown{
+	top:0;
+	left:0;
+	border-right: 1px solid #dfdfdf;
+	border-top: 1px solid #dfdfdf;
+	box-shadow: 4px 4px 5px -1px rgba(0,0,0,.03);
+	transform: rotate(125deg) skewX(-22deg) scale(1,0.866)
+	}
 /************************************************/
 .notificationBox{
 	width: 366px;
@@ -1844,20 +1874,86 @@ margin-left:30px;
   }
   
 
-  @media (max-width: 920px) and (min-width: 768px){
+  @media (max-width: 1024px) and (min-width: 768px){
+	.sectionTitle h3 {
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 20px;}
 	.optionbtn{
 		left: 22px;
 		top: -11px;
 		float: none !important;
 	}
+	.notification,.logout {
+		margin-right: 2px ;
+	}
+	.profile{
+		margin:0 !important;
+	}
+	.navbar-nav{
+		margin:0
+	}
+	.notificationBox{
+		width: 405px;
+		right: 104px;
+	}
+	.triangle{
+		right:45px;
+
+	}
 
   }
 /****************mobile*********************/
-@media (min-width: 300px) and (max-width: 767px){
+@media (min-width: 351px) and (max-width: 767px){
+	.modal-dialog {
+		width: 363px;}
+
+		.modal-content {
+			padding: 42px 16px 30px 15px;
+		}
+	.sectionTitle h3 {
+		font-size: 28px;
+		font-weight: bold;
+		margin-left: 20px;}
+
+	.aboutimg{
+		width:300px;
+		height: auto;
+	}
+	.DurationBox {
+		width: 200px;
+		bottom:-41px;
+	}
+	.frequencyBox {
+		position: absolute;
+		bottom: -39px;}
+
+		.medicationBox {
+			top: 36%;
+		}
+		
+
+.medicationBox form {
+	width: 285px;}
+	.addDiagnosiscomment{
+		width:312px;
+		padding: 7px 23px 37px 20px;
+	bottom:27px;}
+
+	.sendbtn.addNow {
+			padding: 7px 90px;
+		}
+.addtext {
+	width:270px;
+}
 	.aboutbg{
 		position: relative;
           z-index: 0;
-		color:black;
+		color:white;
+	}
+	.navbar-nav{
+		margin: 0 !important;
+		
 	}
 	.phOrderTable .sendstatus{
 		padding: 0;
@@ -1873,9 +1969,7 @@ margin-left:30px;
 		font-size:12pt;
 		font-family: 'Montserrat', sans-serif;
 	}
-	.moreDetailsOrder {
-		/* padding: 7px 9px !important; */
-	}
+
 		.sectionTitle{
 			font-size:18px;
 		}
@@ -1946,10 +2040,10 @@ margin-bottom: 10px;}
 
 	.notificationBox {
 		float: right;
-		width: 350px;
+		width: 312px;
 		position: absolute;
-		top: 30px;
-		right: 192px;
+		top: 143px;
+		right: 7px;
 		display: block;
 		z-index: 5;
 		display: none;
@@ -1957,16 +2051,12 @@ margin-bottom: 10px;}
 
 	}
 .profile{
-	margin-left:25px;
+	margin-top: 19px !important;
+    margin-left: 6px !important;
 }
-.notification, .logout {
-    height: 26px;
-    width: 25px;
-	margin-left: 0;
-	margin-right:0;
-
-}
-
+	.notification,.logout {
+		margin-right: 2px ;
+	}
 	.orderTable{
 		width:600px;
 	
@@ -1983,4 +2073,32 @@ margin-bottom: 10px;}
 	.cancelstatus {
 		padding: 6px 15px;
 	}
+	.newOrderbtn {
+		margin-bottom: 107px;}
+		.triangle{
+			right:70px;
+		}
+		.mainMenu .nav-item {
+			margin-left: 0px !important;
+		}
+		.mainMenu .newOrder {
+			float: none;}
+		
+			.nav-link{
+				font-size: 13px !important;
+				padding: 5px 14px !important;
+			}  
+		}
+@media(max-width:350px){
+	.notificationBox{
+		float: right;
+		width: 301px;
+		position: absolute;
+		top: 161px;
+		right: 3px;
+	}
+	.triangle{
+		right:63px;
+	}
+	
 }

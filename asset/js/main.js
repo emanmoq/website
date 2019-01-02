@@ -32,6 +32,10 @@ $(document).ready(function () {
     $(this).css("display","none");
     $(this).parent().find(".showMore").css("display","block");
 });
+$('.addDiagnosiscomment').click(function () {
+    $(this).css("display","none");
+});
+
 /******************************** */
 
       $(".Duration").click(function() {
