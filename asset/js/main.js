@@ -38,6 +38,10 @@ $(document).ready(function () {
         $(".DurationBox").css("display","block");
        
       });
+      $(".DurationBox").click(function() {
+        $(this).css("display","none");
+       
+      });
       
       $(".notification").click(function() {
         $(".notificationBox").slideToggle(400);
@@ -69,11 +73,11 @@ $(document).ready(function () {
           
       /********* popup for edit Patient ******************  */  
       $(".newOrder").click(function(){
-        $(".PatientBox").css("display","block");
+        $("#PatientBox").css("display","block");
         $(".overlay").css("display","block");
     });
-    $(".closePatient").click(function(){
-        $(".PatientBox").css("display","none");
+    $(".close").click(function(){
+        $(".modal").css("display","none");
         $(".overlay").css("display","none");
     });
     $(".AddDiagnos").click(function(){
@@ -81,6 +85,9 @@ $(document).ready(function () {
     });
     $(".frequency").click(function(){
         $(".frequencyBox").css("display","block");
+    });
+    $(".frequencyBox").click(function(){
+        $(this).css("display","none");
     });
     $(".AddComment").click(function(){
         $(".commentBox").css("display","block");

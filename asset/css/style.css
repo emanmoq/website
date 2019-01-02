@@ -173,8 +173,10 @@ border-radius: 20px;
 .settingdsec h6{
 	color:black;
 	font-family: 'Montserrat', sans-serif;
-	font-size:12pt;
-	margin-bottom: 0
+	font-size:12px;
+	margin-bottom: 0;
+	text-align: left;
+	font-weight: 500; 
 }
 .settingdsec span{
 	color:#9EADC2;
@@ -483,7 +485,7 @@ margin:0 auto;
 	margin-top:20px;
 	padding-bottom:45px;
 	position: relative;
-	margin-bottom: 50px;
+	padding-bottom: 80px;
 
 }
 .LastOrderTitle{
@@ -558,6 +560,7 @@ background-color: #F4F5F8;
 		color: #fff;
   }
   .sendstatus{
+	padding: 4px 30px;
 	  background-color: #CCCACA;
   }
 
@@ -565,11 +568,13 @@ background-color: #F4F5F8;
 	  position: relative;
   }
   .donestatus{
-	  background-color: #6F42C1;
+	padding: 4px 30px;
+    background-color: #6F42C1;
+
   }
   .cancelstatus{
 	background-color:#F6697C;
-	padding:6px 17px;
+	padding:5px 17px;
   }
   .orderdetails{
 	  background-color: none !important;
@@ -897,17 +902,25 @@ border-radius: 50%;
 
 }
 .addDiagnosiscomment{
-	margin:0 auto;
+
 	position: absolute;
-    top: 250px;
-    left: 12%;
+    bottom: 8px;
+    left: 0%;
 	z-index: 5;
 	display: none;
-}
-.sendbtn.addNow{
-	margin-top:20px;
-	padding:7px 105px;
+	border:1px solid #dfdfdf;
+	padding:23px 23px 37px 20px;
+	width: 336px;
 
+	border-radius: 9px;
+	box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.03);
+	background-color: #ffffff;
+
+
+}
+.sendbtn.addNow {
+    margin-top: 20px;
+    padding: 7px 102px;
 }
 .addtext{
 	background-color: #F6F6F6;
@@ -1049,17 +1062,27 @@ margin-left:40px;
 }
 .frequencyBox,.DurationBox{
 	width: 209px;
-	height: 242.2px;
-	object-fit: contain;
-	border-radius: 4px;
+object-fit: contain;
+	border-radius: 9px;
 	box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.03);
 	background-color: #ffffff;
   
 }
 .frequencyBox{
+	position: absolute;
+	bottom: -69px;
+	left:0;
+	width:320px;
 	padding-bottom:0  !important;
 	display: none;
+	padding:29px 40px 35px 30px;
+	border:1px solid #dfdfdf;
+z-index: 10;
+
 }
+.frequencyBox .calc_txt{
+	margin-left: 20px
+} 
 .item{
 	display:inline-block;
 }
@@ -1095,42 +1118,78 @@ input[type=radio] {
 	color:#C3C3C3;
 	padding:8px 13px;
 	border-radius:50%;
+	font-weight: 600;
 }
 .calc_txt:hover{
 	color:white;
-	background-image:  linear-gradient(to right,#3023AE, #9B6DD7);
+	background-image: linear-gradient(135deg, #3023ae, #9b6dd7);
+	box-shadow: 0 0 2px 2px rgba(155,109,215,0.31)
 }
 /**************************/
 
 /********************************************************/
 
 .DurationBox{
-    display: block;
+	width: 209px;
+	border-radius: 9px;
+	box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.03);
+	background-color: #ffffff;
+	position: absolute;
     bottom: 242px;
-    width: 155px;
-	left: 54%;
+    right: 0;
+    bottom: -67px;
+	padding:22px 22px 28px 26px;
+	font-family: 'Montserrat', sans-serif;
+	z-index: 10;
 	display:none;
+	BORDER:1px solid #dfdfdf;
+}
+.Durationtxt,.freqtext{
+
+	font-size: 14px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0px;
+	color: #4a4a4a;
+	font-weight: 600;
+}
+.DurationBox SPAN ,.frequencyBox span{
+
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0px;
+	color: #858585;
+}
+.DurationBox .triangleDown{
+	bottom: -88px;
+    left: 28px;
 }
 .DurationBox h5{
 	color:#865FCF;
 	font-size:12px;
 	margin-bottom:10px;
+	font-weight: 400;
 }
 .carosel-cont{
 	margin-top:15px;
+	margin-left:25px;
 }
 /****** DATE picker*********/
 
 
 .commentBox{
+	width: 365px;
+    height: auto;
+    border-radius: 5px;
+    padding: 35px 20px;
+    position: absolute;
 	background-color:white; 
-	width:365px;
-	height: auto;
-	border-radius: 5px;
-	padding:35px 20px;
-	position: absolute;
-	top: 60px;
-    left: 20px;
+	top: 0;
+    left: -18px;
 	z-index: 5;
 	display:none;
 }
@@ -1163,7 +1222,7 @@ input[type=radio] {
 	border:0;
 }
 .frequencyBox span,.DurationBox span{
-	font-size:11px;
+	font-size:10px;
 	margin-top:0;
 }
 .freqtext{
@@ -1653,6 +1712,7 @@ margin-left:30px;
 	padding:45px 42px;
 	border-radius: 10px;
 	display:none;
+	z-index: 5;
 }
 .NewpharmacyImg{
 	width:95px;
