@@ -92,8 +92,11 @@ $(document).ready(function () {
     });
     $(".Addmedication").click(function(){
         $(".medicationBox").css("display","block");
-       
     });
+    $(".medicationBox").click(function(){
+        $(this).css("display","none");
+    });
+    
    
     $(document).ready(function () {
         $(".pagination").rPage();

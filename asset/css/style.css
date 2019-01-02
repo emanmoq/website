@@ -935,23 +935,21 @@ border-radius: 50%;
 	position: relative;
 }
 .medicationBox{
+	padding-bottom: 25px;
     background-color: white;
-    width: 360px;
+    width: 341px;
     height: auto;
-    padding: 2px 30px;
     position: absolute;
-    left: 6%;
-    top: 31%;
-	z-index: 5;
-	display: block;
+    left: 0%;
+    top: 38%;
+    z-index: 5;
+    display: none;
+    border-radius: 9px;
+    box-shadow: 4px 4px 5px -1px rgba(0,0,0,.03);
+    
+    border: 1px solid #dfdfdf;
 }
-.medicationBox .arrowD{
-	position: absolute;
-	width: 37px;
-    height: 10px;
-	left: 21px;
-    top: 291px;
-}
+
 .searchimg{
     width: 12px;
     height: 12px;
@@ -960,8 +958,10 @@ border-radius: 50%;
     left: 43px;
 }
 .medicationBox form{
-	width:100%;
+	width:310px;
+	margin: 0 auto;
 }
+
 .medicationBox .search{
 border:1px #ECF1F8 solid;
 border-radius: 5px;
@@ -1038,29 +1038,27 @@ font-size:10px;
 float:left;
 margin-left:40px;
 }
-.frequency,.Duration{
-	margin-left:45px;
-}
+
 .addfreq,.addDuration{
 	margin-left:15px;
 	text-decoration: none !important;
 	margin-top:5px;
 }
+.frequency,.Duration{
+	margin-left:45px;
+}
 .frequencyBox,.DurationBox{
-	background-color: white;
-	padding:25px 30px;
-	width:330px;
-	position: absolute;
-	bottom:223px;
-	left:30px;
-	z-index: 5;
-	box-shadow: 0 0 5px 1px rgba(0,0,0,.2);
-	border-radius: 10px;
-	display:none;
-
+	width: 209px;
+	height: 242.2px;
+	object-fit: contain;
+	border-radius: 4px;
+	box-shadow: 4px 4px 5px -1px rgba(0, 0, 0, 0.03);
+	background-color: #ffffff;
+  
 }
 .frequencyBox{
 	padding-bottom:0  !important;
+	display: none;
 }
 .item{
 	display:inline-block;
@@ -1229,7 +1227,7 @@ margin-bottom:28px;
 .newOrderbtn{
 	margin-top:40px;
 	margin-bottom:200px;
-} 
+} /******************* up triangle****************/
 .triangle {
 	position: absolute;
 	background-color: white;
@@ -1260,6 +1258,23 @@ margin-bottom:28px;
 .triangle:after {
 	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
 }
+/*******************down triangle*******************/
+.triangleDown {
+    position: absolute;
+    width: 15px;
+	bottom: -88px;
+    left: -69px;
+ z-index: 6;
+    border-radius: 0 0 0.1em 0;
+    margin: 5em;
+    transform: rotate(45deg);
+    background: linear-gradient(-45deg, white 50%, transparent 50%);
+    border-bottom: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+	box-shadow: 4px 4px 5px -1px rgba(0,0,0,.03);
+
+}
+/************************************************/
 .notificationBox{
 	width: 366px;
 	position: absolute;
